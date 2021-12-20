@@ -1,0 +1,13 @@
+s=input()
+sum1=0
+sum2=0
+for i in s:
+    if(i.isupper()):
+        sum1=sum1+1
+    if(i.islower()):
+        sum2=sum2+1
+if(sum1>sum2):
+    print(s.upper())
+elif(sum1<=sum2):
+    print(s.lower())
+        
