@@ -1,0 +1,7 @@
+n=input()
+b=[]
+a=(n[0].capitalize())
+c=(n[1:])
+b.append(str(a)+str(c))
+print(*b)
+ 
