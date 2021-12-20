@@ -1,0 +1,8 @@
+n1,n2=map(int,input().split())
+for i in range(n2):
+    r=n1%10
+    if(r>0):
+        n1=n1-1
+    elif(r==0):
+        n1=n1//10
+print(n1)
