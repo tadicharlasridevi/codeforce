@@ -1,0 +1,13 @@
+n=int(input())
+s=input()
+count=0
+for i in range(len(s)):
+    if(s[i]=="D"):
+        count+=1
+if(count>n-count):
+    print("Danik")
+elif(count<n-count):
+    print("Anton")
+else:
+    print("Friendship")
+        
