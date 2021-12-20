@@ -1,0 +1,6 @@
+n=int(input())
+s=map(int,input().split())
+if(any(s)):
+    print("hard")
+else:
+    print("easy")
