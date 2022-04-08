@@ -1,0 +1,38 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,c=0,s=0;
+    cin>>n;
+    int e=n;
+    for(int i=2;i*i<n;i++)
+    {
+        if(n%i==0)
+        {
+        c+=1;
+        break;
+        }
+        
+    }
+    while(n!=0)
+    {
+        int r=n%10;
+        s=s*10+r;
+        n=n/10;
+    }
+    for(int i=2;i*i<s;i++)
+    {
+        if(s%i==0)
+        {
+        c+=1;
+        break;
+    }
+    }
+    if(c==0)
+    cout<<"circular prime";
+    else if(c==1)
+    cout<<"prime but not a circular prime";
+    else
+    cout<<"not prime";
+    
+}
